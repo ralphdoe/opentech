@@ -1,5 +1,6 @@
-# opentech
-Talks Rest Repository with Swagger
+# opentech project
+
+Spring Boot Rest Repository with Swagger
 
 Implementation of Swagger in Rest Spring Boot API.
 
@@ -45,11 +46,12 @@ Implementation of Swagger in Rest Spring Boot API.
    ```
 3. Modify file applitacion.properties:
   ```
-    server.port=8080
+     server.port=8080
      server.servlet.context-path=/opentech
   ```
   
-Clean the project: 
+
+Build the project: 
 
 ```./mvnw clean install```
 
