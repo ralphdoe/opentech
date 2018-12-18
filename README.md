@@ -5,7 +5,8 @@ Spring Boot Rest Repository with Swagger
 Implementation of Swagger in Rest Spring Boot API.
 
 1. Add Maven Configuration: 
-	```<dependency>
+	```
+                <dependency>
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger2</artifactId>
 			<version>2.9.2</version>
@@ -15,7 +16,8 @@ Implementation of Swagger in Rest Spring Boot API.
 			<groupId>io.springfox</groupId>
 			<artifactId>springfox-swagger-ui</artifactId>
 			<version>2.9.2</version>
-		</dependency>```
+		</dependency>
+         ```
 
 
 2. Add Swagger Config:
