@@ -51,12 +51,25 @@ Implementation of Swagger in Rest Spring Boot API.
      server.port=8080
      server.servlet.context-path=/opentech
   ```
-  
 
-Build the project: 
+4. Database Creation:
+ ```
+mysql> create database opentech; -- Create the new database
+mysql> create user 'opentech'@'%' identified by 'opentech'; -- Creates the user
+mysql> grant all on opentech.* to 'opentech'@'%'; -- Gives all the privileges to the new user on the newly created database
+```  
+5. Database confiration: 
+```
+spring.jpa.hibernate.ddl-auto=create
+spring.datasource.url=jdbc:mysql://localhost:3306/opentech
+spring.datasource.username=opentech
+spring.datasource.password=opentech
+```
+
+6. Build the project: 
 
 ```./mvnw clean install```
 
-Run the project:
+7. Run the project:
 
 ```./mvnw spring-boot:run```
