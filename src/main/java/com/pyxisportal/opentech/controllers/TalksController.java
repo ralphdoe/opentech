@@ -19,6 +19,12 @@ public class TalksController {
         return talkJpaRepository.findAll();
     }
 
+    @PutMapping()
+    public Talk updateTalk(@RequestBody final Talk talk) {
+        talkJpaRepository.save(talk);
+        return talkJpaRepository.findByName(talk.getName());
+    }
+
     @GetMapping(value = "/{name}")
     public Talk getTalkByName(@PathVariable final String name) {
         return talkJpaRepository.findByName(name);
